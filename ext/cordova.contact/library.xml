@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<library isWhitelist="true">
+    <extension id="cordova.contact">
+        <entryClass>org.apache.cordova.pim.Contact</entryClass>
+    </extension>
+    <platforms>
+        <platform value="JAVA">
+            <target version="default" config="JAVA_XHR" />
+        </platform>
+    </platforms>
+    <configurations>
+        <configuration name="JAVA_XHR" version="1.0" comment="For XHR architecture for Java implementation">
+            <src type="text/java" path="org" comment="API implementation in JavaScript" />
+            <src type="text/javascript" path="js/common/Contact.js" comment="JS interface" />
+            <src type="text/javascript" path="js/common/ContactAddress.js" comment="JS interface" />
+            <src type="text/javascript" path="js/common/ContactError.js" comment="JS interface" />
+            <src type="text/javascript" path="js/common/ContactField.js" comment="JS interface" />
+            <src type="text/javascript" path="js/common/ContactFindOptions.js" comment="JS interface" />
+            <src type="text/javascript" path="js/common/ContactName.js" comment="JS interface" />
+            <src type="text/javascript" path="js/common/ContactOrganization.js" comment="JS interface" />
+            <src type="text/javascript" path="js/common/contacts.js" comment="JS interface" />
+            <src type="text/javascript" path="js/blackberry/BBContact.js" comment="JS interface" />
+            <src type="text/javascript" path="js/blackberry/BBcontacts.js" comment="JS interface" />
+            <src type="text/javascript" path="js/blackberry/BBContactUtils.js" comment="JS interface" />
+        </configuration>
+    </configurations>
+    <features>
+        <feature id="cordova.contact" version="1.0.0">Cordova Contact Extension</feature>
+    </features>
+</library>

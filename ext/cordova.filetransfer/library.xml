@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<library isWhitelist="true">
+    <extension id="cordova.filetransfer">
+        <entryClass>org.apache.cordova.http.FileTransfer</entryClass>
+    </extension>
+    <platforms>
+        <platform value="JAVA">
+            <target version="default" config="JAVA_XHR" />
+        </platform>
+    </platforms>
+    <configurations>
+        <configuration name="JAVA_XHR" version="1.0" comment="For XHR architecture for Java implementation">
+            <src type="text/java" path="org" comment="API implementation in JavaScript" />
+            <src type="text/javascript" path="js/common/FileTransfer.js" comment="JS interface" />
+            <src type="text/javascript" path="js/common/FileTransferError.js" comment="JS interface" />
+            <src type="text/javascript" path="js/common/FileUploadOptions.js" comment="JS interface" />
+            <src type="text/javascript" path="js/common/FileUploadResult.js" comment="JS interface" />
+        </configuration>
+    </configurations>
+    <features>
+        <feature id="cordova.filetransfer" version="1.0.0">Cordova File Transfer Extension</feature>
+    </features>
+</library>

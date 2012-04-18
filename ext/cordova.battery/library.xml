@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<library isWhitelist="true">
+    <extension id="cordova.battery">
+        <entryClass>org.apache.cordova.battery.Battery</entryClass>
+    </extension>
+    <platforms>
+        <platform value="JAVA">
+            <target version="default" config="JAVA_XHR" />
+        </platform>
+    </platforms>
+    <configurations>
+        <configuration name="JAVA_XHR" version="1.0" comment="For XHR architecture for Java implementation">
+            <src type="text/java" path="org" comment="API implementation in JavaScript" />
+            <src type="text/javascript" path="js/common/battery.js" comment="JS interface" />
+        </configuration>
+    </configurations>
+    <features>
+        <feature id="cordova.battery" version="1.0.0">Cordova Battery Extension</feature>
+    </features>
+</library>

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<library isWhitelist="true">
+    <extension id="cordova.device">
+        <entryClass>org.apache.cordova.device.Device</entryClass>
+    </extension>
+    <platforms>
+        <platform value="JAVA">
+            <target version="default" config="JAVA_XHR" />
+        </platform>
+    </platforms>
+    <configurations>
+        <configuration name="JAVA_XHR" version="1.0" comment="For XHR architecture for Java implementation">
+            <src type="text/java" path="org" comment="API implementation in JavaScript" />
+            <src type="text/javascript" path="js/blackberry/device.js" comment="JS interface" />
+        </configuration>
+    </configurations>
+    <features>
+        <feature id="cordova.device" version="1.0.0">Cordova Device Extension</feature>
+    </features>
+</library>

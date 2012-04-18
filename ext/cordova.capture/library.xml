@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<library isWhitelist="true">
+    <extension id="cordova.capture">
+        <entryClass>org.apache.cordova.media.MediaCapture</entryClass>
+    </extension>
+    <platforms>
+        <platform value="JAVA">
+            <target version="default" config="JAVA_XHR" />
+        </platform>
+    </platforms>
+    <configurations>
+        <configuration name="JAVA_XHR" version="1.0" comment="For XHR architecture for Java implementation">
+            <src type="text/java" path="org" comment="API implementation in JavaScript" />
+            <src type="text/javascript" path="js/common/capture.js" comment="JS interface" />
+            <src type="text/javascript" path="js/common/CaptureAudioOptions.js" comment="JS interface" />
+            <src type="text/javascript" path="js/common/CaptureError.js" comment="JS interface" />
+            <src type="text/javascript" path="js/common/CaptureImageOptions.js" comment="JS interface" />
+            <src type="text/javascript" path="js/common/CaptureVideoOptions.js" comment="JS interface" />
+            <src type="text/javascript" path="js/common/ConfigurationData.js" comment="JS interface" />
+            <src type="text/javascript" path="js/common/MediaFile.js" comment="JS interface" />
+            <src type="text/javascript" path="js/common/MediaFileData.js" comment="JS interface" />
+        </configuration>
+    </configurations>
+    <features>
+        <feature id="cordova.capture" version="1.0.0">Cordova Capture Extension</feature>
+    </features>
+</library>

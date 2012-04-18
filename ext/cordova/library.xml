@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<library>
+    <extension id="cordova">
+        <entryClass>org.apache.cordova.CordovaExtension</entryClass>
+        <dependencies>
+            <extension id="cordova.core"/>
+        </dependencies> 
+    </extension>
+    <platforms>
+        <platform value="JAVA">
+            <target version="default" config="JAVA" />
+        </platform>
+    </platforms>
+    <configurations>
+        <configuration name="JAVA" version="1.0" comment="Java implementation">
+            <src type="text/java" path="org" comment="API implementation in JavaScript" />
+        </configuration>
+    </configurations>
+    <features>
+        <feature id="cordova" version="1.0.0">Cordova JavaScript Extension</feature>
+    </features>
+</library>

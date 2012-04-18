@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<library isWhitelist="true">
+    <extension id="cordova.file">
+        <entryClass>org.apache.cordova.file.FileManager</entryClass>
+    </extension>
+    <platforms>
+        <platform value="JAVA">
+            <target version="default" config="JAVA_XHR" />
+        </platform>
+    </platforms>
+    <configurations>
+        <configuration name="JAVA_XHR" version="1.0" comment="For XHR architecture for Java implementation">
+            <src type="text/java" path="org" comment="API implementation in JavaScript" />
+            <src type="text/javascript" path="js/common/DirectoryEntry.js" comment="JS interface" />
+            <src type="text/javascript" path="js/common/DirectoryReader.js" comment="JS interface" />
+            <src type="text/javascript" path="js/common/Entry.js" comment="JS interface" />
+            <src type="text/javascript" path="js/common/File.js" comment="JS interface" />
+            <src type="text/javascript" path="js/common/FileEntry.js" comment="JS interface" />
+            <src type="text/javascript" path="js/common/FileError.js" comment="JS interface" />
+            <src type="text/javascript" path="js/common/FileReader.js" comment="JS interface" />
+            <src type="text/javascript" path="js/common/FileSystem.js" comment="JS interface" />
+            <src type="text/javascript" path="js/common/FileWriter.js" comment="JS interface" />
+            <src type="text/javascript" path="js/common/Flags.js" comment="JS interface" />
+            <src type="text/javascript" path="js/common/LocalFileSystem.js" comment="JS interface" />
+            <src type="text/javascript" path="js/common/Metadata.js" comment="JS interface" />
+            <src type="text/javascript" path="js/common/ProgressEvent.js" comment="JS interface" />
+            <src type="text/javascript" path="js/common/requestFileSystem.js" comment="JS interface" />
+            <src type="text/javascript" path="js/common/resolveLocalFileSystemURI.js" comment="JS interface" />
+            <src type="text/javascript" path="js/blackberry/BBDirectoryEntry.js" comment="JS interface" />
+            <src type="text/javascript" path="js/blackberry/BBEntry.js" comment="JS interface" />
+            <src type="text/javascript" path="js/blackberry/BBFile.js" comment="JS interface" />
+        </configuration>
+    </configurations>
+    <features>
+        <feature id="cordova.file" version="1.0.0">Cordova File Extension</feature>
+    </features>
+</library>
