@@ -30,20 +30,20 @@ Project Structure
 
 - ext/ - Each folder in this project is a complete WebWorks JavaScript Extension containing the native code, JavaScript and configuration file for the extension.
 
-    cordova/ ................. Cordova base framework (required)
-    cordova.core/ ............ Core JavaScript files (required)
-    cordova.accelerometer/ ... Accelerometer plugin
-    cordova.app/ ............. Application management plugin
-    cordova.battery/ ......... Battery plugin
-    cordova.camera/ .......... Camera plugin
-    cordova.capture/ ......... Capture plugin
-    cordova.contact/ ......... Contacts plugin
-    cordova.device/ .......... Device plugin
-    cordova.file/ ............ File plugin
-    cordova.filetransfer/ .... FileTransfer plugin
-    cordova.geolocation/ ..... Geolocation plugin
-    cordova.network/ ......... NetworkStatus plugin
-    cordova.notification/ .... Notification plugin
+    - cordova                 - Cordova base framework
+    - cordova.core            - Core JavaScript files
+    - cordova.accelerometer   - Accelerometer plugin
+    - cordova.app             - Application management plugin
+    - cordova.battery         - Battery plugin
+    - cordova.camera          - Camera plugin
+    - cordova.capture         - Capture plugin
+    - cordova.contact         - Contacts plugin
+    - cordova.device          - Device plugin
+    - cordova.file            - File plugin
+    - cordova.filetransfer    - FileTransfer plugin
+    - cordova.geolocation     - Geolocation plugin
+    - cordova.network         - NetworkStatus plugin
+    - cordova.notification    - Notification plugin
 
 Beneath each folder is a `library.xml` file which is the WebWorks Extension configuration file defining the extension and the location of the resources that compose it.
 
