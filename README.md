@@ -97,7 +97,7 @@ Suggested Improvements to WebWorks Framework
 
 - An extension `library.xml` supports defining dependencies but this only affects the build and not runtime.  Would be nice to be able to specify extension dependencies to force an extension to load before another one.
 - The `library.xml` file provides a way to declare associated JavaScript files, but when the extension is loaded, its passed all the JavaScript files known by the framework instead of just the ones needed by the extension.
- 
+- Would be nice to be able to specify additional resource dependencies (ie. images) that automatically get bundled with the application. Currently images which are bundled with in the java source tree will be packaged up but would be better to have a way of declaratively defining via library.xml. 
 
 Further Information
 -------------------
