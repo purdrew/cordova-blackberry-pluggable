@@ -849,6 +849,34 @@
             }, {limit:2});
         }
 
+        //--------------------------------------------
+        // ChildBrowser
+        //--------------------------------------------
+        function locationChanged(newurl) {
+            console.log("The JS got this url = " + newurl);
+        }
+
+        function closed() {
+            console.log("The JS got a close event");
+        }
+
+        function error(text) {
+            console.log(text);
+        }
+
+        function showPage(locbar) {
+            window.plugins.childBrowser.onLocationChange = locationChanged;
+            window.plugins.childBrowser.onClose = closed;
+            window.plugins.childBrowser.onError = error;
+            window.plugins.childBrowser.showWebPage("http://www.google.com", {
+                showLocationBar : locbar
+            });
+        }
+
+        function openExternal() {
+            window.plugins.childBrowser.openExternal("http://www.google.com");
+        }
+
     </script>
     <title>Cordova API Sample</title>
   </head>
@@ -953,5 +981,9 @@
     <input type="button" value="Image" onclick="startImageCapture();return false;" />
     <input type="button" value="Video" onclick="startVideoCapture();return false;" />
 
+    <h3>ChildBrowser</h3>
+    <input type="button" value="Show Page" onclick="showPage(true);return false;" />
+    <input type="button" value="Show Page No Toolbar" onclick="showPage(false);return false;" />
+    <input type="button" value="Native Browser" onclick="openExternal();return false;" />
   </body>
 </html>

@@ -47,10 +47,12 @@
   <feature id="cordova.network" required="true" version="1.0.0" />
   <feature id="cordova.notification" required="true" version="1.0.0" />
   <feature id="cordova.contact" required="true" version="1.0.0" />
+  <feature id="cordova.childbrowser" required="true" version="1.0.0" />
 
   <!-- Cordova API -->
   <access subdomains="true" uri="file:///store/home" />
   <access subdomains="true" uri="file:///SDCard" />
+  <access subdomains="true" uri="http://www.google.com" />
 
   <!-- Expose access to all URIs, including the file and http protocols -->
   <access subdomains="true" uri="*" />

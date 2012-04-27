@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<library isWhitelist="true">
+    <extension id="cordova.childbrowser">
+        <entryClass>org.apache.cordova.plugins.childbrowser.ChildBrowser</entryClass>
+    </extension>
+    <platforms>
+        <platform value="JAVA">
+            <target version="default" config="JAVA_XHR" />
+        </platform>
+    </platforms>
+    <configurations>
+        <configuration name="JAVA_XHR" version="1.0" comment="For XHR architecture for Java implementation">
+            <src type="text/java" path="org" comment="API implementation in JavaScript" />
+            <src type="text/javascript" path="js/common/childbrowser.js" comment="JS interface" />
+        </configuration>
+    </configurations>
+    <features>
+        <feature id="cordova.childbrowser" version="1.0.0">Cordova ChildBrowser Extension</feature>
+    </features>
+</library>
